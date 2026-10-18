@@ -1,0 +1,503 @@
+"<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Invitation - Anburaj & Abinaya</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800&family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            light: '#f7ebaf',
+                            DEFAULT: '#d4af37',
+                            dark: '#aa820a',
+                            glow: '#ffd700'
+                        },
+                        brown: {
+                            darkest: '#0d0604',
+                            deep: '#180c09',
+                            card: '#24120e',
+                            light: '#3d201a',
+                            border: '#4a2820'
+                        }
+                    },
+                    fontFamily: {
+                        script: ['"Great Vibes"', 'cursive'],
+                        serif: ['"Playfair Display"', 'serif'],
+                        cinzel: ['"Cinzel"', 'serif'],
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom Styles for Luxury Theme */
+        body {
+            background-color: #0d0604;
+            color: #f3e5ab;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            overflow-x: hidden;
+        }
+
+        /* Gold Gradient Text */
+        .text-gold-gradient {
+            background: linear-gradient(135deg, #fff3cd 0%, #d4af37 50%, #aa820a 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Luxury Gold Border Frame */
+        .gold-border {
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            box-shadow: 0 0 15px rgba(0,0,0,0.5), inset 0 0 15px rgba(212, 175, 55, 0.05);
+        }
+
+        .gold-border-glow {
+            border: 1px solid rgba(212, 175, 55, 0.5);
+            box-shadow: 0 4px 25px rgba(0, 0, 0, 0.9), 0 0 15px rgba(212, 175, 55, 0.25);
+        }
+
+        /* Luxury Card Styling */
+        .luxury-card {
+            background: linear-gradient(145deg, #24120e 0%, #180c09 100%);
+            border: 1px solid rgba(212, 175, 55, 0.25);
+            transition: all 0.3s ease;
+        }
+
+        .luxury-card:hover {
+            border-color: rgba(212, 175, 55, 0.6);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7), 0 0 15px rgba(212, 175, 55, 0.15);
+        }
+
+        /* Button Gradient */
+        .btn-gold {
+            background: linear-gradient(135deg, #d4af37 0%, #997510 100%);
+            color: #0d0604;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .btn-gold:hover {
+            background: linear-gradient(135deg, #ebd06a 0%, #b88e14 100%);
+            box-shadow: 0 0 18px rgba(212, 175, 55, 0.5);
+            transform: translateY(-1px);
+        }
+
+        /* Audio Control Button Floating */
+        .audio-float {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 40;
+        }
+
+        /* Subtle Luxury Pattern Background */
+        .bg-pattern {
+            background-image: radial-gradient(rgba(212, 175, 55, 0.08) 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+
+        /* Front Page Fade Transition */
+        #front-cover {
+            transition: opacity 0.8s ease, visibility 0.8s ease;
+        }
+        #front-cover.hidden-cover {
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body class="bg-brown-darkest text-[#e8d5b5] antialiased selection:bg-gold selection:text-brown-darkest overflow-hidden" id="body-wrapper">
+
+    <!-- FRONT PAGE / COVER SCREEN OVERLAY -->
+    <div id="front-cover" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-brown-darkest bg-pattern">
+        <!-- Ambient Radial Glow -->
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-brown-card/80 via-brown-darkest to-brown-darkest pointer-events-none"></div>
+
+        <!-- Center Envelope Card -->
+        <div class="relative z-10 w-full max-w-sm luxury-card rounded-2xl p-6 sm:p-8 text-center gold-border-glow border flex flex-col items-center gap-4 animate-fade-in">
+            
+            <!-- Avatar Image Frame -->
+            <div class="relative">
+                <div class="w-20 h-20 sm:w-24 sm:h-24 rounded-full border-2 border-gold/70 p-1 bg-brown-darkest shadow-xl">
+                    <img src="WA_1791335891319~2"
+                         alt="Anburaj & Abinaya" 
+                         class="w-full h-full object-cover rounded-full"
+                         onerror="this.src='WA_1791335891319~2'">
+                </div>
+                <div class="absolute -bottom-1 left-1/2 -translate-x-1/2 bg-brown-darkest px-2 py-0.5 rounded-full border border-gold/40 text-[9px] font-cinzel text-gold uppercase tracking-wider">
+                    ♥
+                </div>
+            </div>
+
+            <!-- Blessing Subtitle -->
+            <div class="space-y-1 mt-1">
+                <p class="font-cinzel text-[9px] sm:text-[10px] tracking-[0.2em] text-gold/80 uppercase font-semibold">
+                    WITH THE DIVINE BLESSINGS OF OUR FAMILIES
+                </p>
+            </div>
+
+            <!-- Names -->
+            <h1 class="font-script text-4xl sm:text-5xl text-gold-gradient py-1">
+                Anburaj <span class="font-serif text-2xl text-gold/70">&amp;</span> Abinaya
+            </h1>
+
+            <!-- Event Date -->
+            <p class="font-cinzel text-xs text-gold/80 tracking-widest uppercase">
+                DECEMBER 10, 2026 • TAMIL NADU
+            </p>
+
+            <!-- Open Invitation Button -->
+            <button onclick="openInvitation()" class="mt-2 w-full btn-gold py-3 px-6 rounded-xl font-cinzel text-xs tracking-widest uppercase shadow-lg flex items-center justify-center gap-2 group cursor-pointer">
+                <i class="fa-solid fa-envelope text-brown-darkest group-hover:scale-110 transition-transform"></i>
+                OPEN INVITATION
+            </button>
+        </div>
+    </div>
+
+
+    <!-- MAIN WEBSITE CONTENT -->
+    <div id="main-content" class="relative z-10 max-w-4xl mx-auto px-4 py-8 sm:py-12 flex flex-col gap-12 sm:gap-16">
+
+        <!-- SECTION 1: HERO HEADER -->
+        <header class="text-center pt-6 pb-4" data-aos="fade-down" data-aos-duration="1200">
+            <!-- Header Top Line -->
+            <div class="flex items-center justify-center gap-2 mb-4">
+                <span class="h-[1px] w-8 sm:w-16 bg-gradient-to-r from-transparent to-gold/60"></span>
+                <i class="fa-solid fa-om text-gold/80 text-xs"></i>
+                <p class="font-cinzel text-[10px] sm:text-xs tracking-[0.25em] text-gold/90 uppercase font-semibold">
+                    WITH THE DIVINE BLESSINGS OF OUR FAMILIES
+                </p>
+                <i class="fa-solid fa-om text-gold/80 text-xs"></i>
+                <span class="h-[1px] w-8 sm:w-16 bg-gradient-to-l from-transparent to-gold/60"></span>
+            </div>
+
+            <!-- Groom & Bride Names -->
+            <h1 class="font-script text-5xl sm:text-7xl md:text-8xl text-gold-gradient my-4 py-2 leading-tight drop-shadow-lg">
+              Anburaj <span class="font-serif text-3xl sm:text-5xl text-gold/70 italic">&amp;</span> Abinaya
+            </h1>
+
+            <!-- Main Date Banner -->
+            <div class="mt-6 inline-block w-full max-w-xl">
+                <div class="luxury-card rounded-2xl p-4 sm:p-5 border gold-border-glow">
+                    <div class="grid grid-cols-3 divide-x divide-gold/30 items-center text-center">
+                        <div class="px-2">
+                            <span class="block font-cinzel text-xs sm:text-sm text-gold/70 uppercase">Day</span>
+                            <span class="font-serif text-base sm:text-xl font-bold text-gold-light mt-1">Thursday</span>
+                        </div>
+                        <div class="px-2">
+                            <span class="block font-cinzel text-xs sm:text-sm text-gold/70 uppercase">Date</span>
+                            <span class="font-serif text-lg sm:text-2xl font-bold text-gold-gradient mt-1">10 . 12 . 2026</span>
+                        </div>
+                        <div class="px-2">
+                            <span class="block font-cinzel text-xs sm:text-sm text-gold/70 uppercase">Time</span>
+                            <span class="font-serif text-base sm:text-xl font-bold text-gold-light mt-1">09:00 AM</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- SECTION 2: COUNTDOWN TIMER -->
+        <section class="text-center" data-aos="fade-up" data-aos-duration="1000">
+            <h2 class="font-cinzel text-xl sm:text-2xl text-gold-gradient uppercase tracking-widest font-bold mb-1">
+                Counting Down to Forever
+            </h2>
+            <p class="font-serif italic text-xs sm:text-sm text-gold/60 mb-6">Until our special wedding moment</p>
+
+            <div class="grid grid-cols-4 gap-2 sm:gap-4 max-w-lg mx-auto">
+                <div class="luxury-card p-3 sm:p-4 rounded-xl text-center border border-gold/30">
+                    <span id="cd-days" class="block font-serif text-2xl sm:text-4xl font-bold text-gold-gradient">00</span>
+                    <span class="font-cinzel text-[10px] sm:text-xs text-gold/70 uppercase tracking-wider mt-1 block">Days</span>
+                </div>
+                <div class="luxury-card p-3 sm:p-4 rounded-xl text-center border border-gold/30">
+                    <span id="cd-hours" class="block font-serif text-2xl sm:text-4xl font-bold text-gold-gradient">00</span>
+                    <span class="font-cinzel text-[10px] sm:text-xs text-gold/70 uppercase tracking-wider mt-1 block">Hours</span>
+                </div>
+                <div class="luxury-card p-3 sm:p-4 rounded-xl text-center border border-gold/30">
+                    <span id="cd-mins" class="block font-serif text-2xl sm:text-4xl font-bold text-gold-gradient">00</span>
+                    <span class="font-cinzel text-[10px] sm:text-xs text-gold/70 uppercase tracking-wider mt-1 block">Mins</span>
+                </div>
+                <div class="luxury-card p-3 sm:p-4 rounded-xl text-center border border-gold/30">
+                    <span id="cd-secs" class="block font-serif text-2xl sm:text-4xl font-bold text-gold-gradient">00</span>
+                    <span class="font-cinzel text-[10px] sm:text-xs text-gold/70 uppercase tracking-wider mt-1 block">Secs</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 3: FORMAL INVITATION CARD -->
+        <section class="max-w-2xl mx-auto w-full" data-aos="zoom-in" data-aos-duration="1000">
+            <div class="luxury-card rounded-2xl p-6 sm:p-10 text-center relative border gold-border-glow">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gold/10 border border-gold/30 mb-4">
+                    <i class="fa-solid fa-envelope-open-text text-gold text-xs"></i>
+                    <span class="font-cinzel text-[10px] sm:text-xs text-gold uppercase tracking-widest">A SPECIAL INVITATION</span>
+                </div>
+
+                <i class="fa-solid fa-quote-left block text-2xl sm:text-3xl text-gold/30 my-2"></i>
+                
+                <p class="font-serif italic text-base sm:text-xl text-gold-light/90 leading-relaxed max-w-xl mx-auto px-2">
+                    "Dear All, we cordially invite you and your family to grace the wedding ceremony and bless the couple as they begin their beautiful journey together."
+                </p>
+
+                <i class="fa-solid fa-quote-right block text-2xl sm:text-3xl text-gold/30 my-2"></i>
+            </div>
+        </section>
+
+        <!-- SECTION 4: WEDDING CEREMONIES -->
+        <section data-aos="fade-up" data-aos-duration="1000">
+            <div class="text-center mb-8">
+                <span class="font-cinzel text-xs text-gold/70 tracking-widest uppercase block mb-1">JOIN US IN CELEBRATION</span>
+                <h2 class="font-cinzel text-2xl sm:text-3xl text-gold-gradient font-bold">Wedding Ceremonies</h2>
+                <div class="w-16 h-[2px] bg-gradient-to-r from-transparent via-gold to-transparent mx-auto mt-2"></div>
+            </div>
+
+            <div class="max-w-xl mx-auto">
+                <!-- Wedding Ceremony Card -->
+                <div class="luxury-card rounded-2xl p-6 border gold-border flex flex-col justify-between hover:scale-[1.01] transition-transform">
+                    <div>
+                        <div class="flex justify-between items-start mb-4">
+                            <span class="px-3 py-1 rounded-full bg-gold/20 text-gold-glow border border-gold/50 font-cinzel text-[10px] tracking-wider uppercase font-semibold">
+                                MAIN EVENT
+                            </span>
+                            <span class="text-gold/80 text-xs font-cinzel"><i class="fa-regular fa-clock me-1"></i> DEC 10, 2026</span>
+                        </div>
+                        <h3 class="font-serif text-xl sm:text-2xl font-semibold text-gold-gradient mb-3">
+                            Wedding Ceremony
+                        </h3>
+                        <ul class="space-y-2 text-xs sm:text-sm text-gold-light/80 mb-6">
+                            <li class="flex items-start gap-2">
+                                <i class="fa-regular fa-calendar text-gold mt-1"></i>
+                                <span>Thursday, 10th December 2026 | 09:00 AM</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fa-solid fa-location-dot text-gold mt-1"></i>
+                                <span> Thiruvegampet, Tamil Nadu</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Map & Calendar Buttons -->
+                    <div class="grid grid-cols-2 gap-3 pt-4 border-t border-gold/20">
+                        <a href="https://www.google.com/maps/place/%E0%AE%B5%E0%AF%88%E0%AE%B0+%E0%AE%A4%E0%AE%BF%E0%AE%B0%E0%AF%81%E0%AE%AE%E0%AE%A3+%E0%AE%AE%E0%AE%A3%E0%AF%8D%E0%AE%9F%E0%AE%AA%E0%AE%AE%E0%AF%8D+%E0%AE%A4%E0%AE%BF%E0%AE%B0%E0%AF%81%E0%AE%B5%E0%AF%87%E0%AE%95%E0%AE%AE%E0%AF%8D%E0%AE%AA%E0%AE%A4%E0%AF%8D%E0%AE%A4%E0%AF%81/@9.8317012,78.7812861,17z/data=!3m1!4b1!4m6!3m5!1s0x3b00510011673651:0xa6c01015cb7fc56e!8m2!3d9.8316959!4d78.783861!16s%2Fg%2F11w3jhrhyj?entry=ttu&g_ep=EgoyMDI2MTAxMy4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" 
+                           class="btn-gold py-2.5 px-3 rounded-lg text-center text-xs flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-map-location-dot"></i> Get Map
+                        </a>
+                        <button onclick="addToCalendar('Wedding Ceremony - Anburaj & Abinaya', '2026-12-10T09:00:00', 'Thiruveggam, Tamil Nadu')" 
+                                class="bg-brown-light hover:bg-brown-border text-gold border border-gold/40 py-2.5 px-3 rounded-lg text-center text-xs flex items-center justify-center gap-2 transition-all">
+                            <i class="fa-regular fa-calendar-plus"></i> Calendar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 5: FAMILY & RELATIVES -->
+        <section data-aos="fade-up" data-aos-duration="1000">
+            <div class="text-center mb-8">
+                <span class="font-cinzel text-xs text-gold/70 tracking-widest uppercase block mb-1">HONORED FAMILIES</span>
+                <h2 class="font-cinzel text-2xl sm:text-3xl text-gold-gradient font-bold">Family &amp; Relatives</h2>
+                <div class="w-16 h-[2px] bg-gradient-to-r from-transparent via-gold to-transparent mx-auto mt-2"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Groom's Family Card -->
+                <div class="luxury-card rounded-2xl p-6 text-center border gold-border">
+                    <div class="w-12 h-12 rounded-full bg-gold/10 border border-gold/30 flex items-center justify-center mx-auto mb-4">
+                        <i class="fa-solid fa-house-chimney text-gold text-lg"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-semibold text-gold-gradient mb-3">Groom's Family</h3>
+                    <ul class="space-y-1.5 text-xs sm:text-sm text-gold-light/90">
+                        <li class="font-semibold text-gold">Mr. Groom's Father Name</li>
+                        <li class="font-semibold text-gold">Mrs. Groom's Mother Name</li>
+                        <li class="pt-2 text-gold-light/70">&amp; Near &amp; Dear Relatives</li>
+                    </ul>
+                </div>
+
+                <!-- Bride's Family Card -->
+                <div class="luxury-card rounded-2xl p-6 text-center border gold-border">
+                    <div class="w-12 h-12 rounded-full bg-gold/10 border border-gold/30 flex items-center justify-center mx-auto mb-4">
+                        <i class="fa-solid fa-heart text-gold text-lg"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-semibold text-gold-gradient mb-3">Bride's Family</h3>
+                    <ul class="space-y-1.5 text-xs sm:text-sm text-gold-light/90">
+                        <li class="font-semibold text-gold">Mr. Chandrasekar</li>
+                        <li class="font-semibold text-gold">Mrs. Manjula</li>
+                        <li class="font-semibold text-gold">Mr. Arun Kumar C</li>
+                        <li class="font-semibold text-gold">Ms. Anu C</li>
+                        <li class="pt-2 text-gold-light/70">&amp; Near &amp; Dear Relatives</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+       
+                            
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 7: WHATSAPP WISHES -->
+        <section class="max-w-xl mx-auto w-full" data-aos="fade-up" data-aos-duration="1000">
+            <div class="luxury-card rounded-2xl p-6 sm:p-8 border gold-border-glow">
+                <div class="text-center mb-6">
+                    <span class="font-cinzel text-xs text-gold/70 tracking-widest uppercase block mb-1">SEND YOUR BLESSINGS</span>
+                    <h2 class="font-cinzel text-2xl text-gold-gradient font-bold">Wishes via WhatsApp</h2>
+                    <p class="font-serif italic text-xs text-gold/60 mt-1">Convey your love and congratulations directly to us</p>
+                </div>
+
+                <form id="whatsappForm" onsubmit="sendWhatsAppWish(event)" class="space-y-4">
+                    <div>
+                        <label for="guestName" class="block font-cinzel text-xs text-gold/80 mb-1">Your Name</label>
+                        <input type="text" id="guestName" required placeholder="Enter your full name" 
+                               class="w-full bg-brown-darkest/80 border border-gold/30 rounded-lg px-4 py-3 text-sm text-gold-light placeholder-gold/30 focus:outline-none focus:border-gold focus:ring-1 focus:ring-gold transition-all">
+                    </div>
+
+                    <div>
+                        <label for="guestMessage" class="block font-cinzel text-xs text-gold/80 mb-1">Your Wishes &amp; Blessings</label>
+                        <textarea id="guestMessage" rows="3" required placeholder="Write your heartwarming message here..." 
+                                  class="w-full bg-brown-darkest/80 border border-gold/30 rounded-lg px-4 py-3 text-sm text-gold-light placeholder-gold/30 focus:outline-none focus:border-gold focus:ring-1 focus:ring-gold transition-all"></textarea>
+                    </div>
+
+                    <button type="submit" 
+                            class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-semibold py-3 px-4 rounded-xl shadow-lg transition-all flex items-center justify-center gap-2 text-sm tracking-wide">
+                        <i class="fa-brands fa-whatsapp text-lg"></i> SEND WISHES VIA WHATSAPP
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <!-- SECTION 8: FOOTER -->
+        <footer class="text-center py-8 border-t border-gold/20" data-aos="fade-in">
+            <h3 class="font-script text-3xl sm:text-4xl text-gold-gradient mb-2">
+                Anburaj <span class="text-gold/70">♥</span> Abinaya
+            </h3>
+            <p class="font-cinzel text-[10px] sm:text-xs text-gold/60 tracking-widest uppercase mb-4">
+                THIRUVEGAMPET | TAMIL NADU
+            </p>
+            <p class="font-sans text-xs text-gold/40">
+                We eagerly await your gracious presence and blessings!
+            </p>
+        </footer>
+
+    </div>
+
+    <!-- AUDIO PLAYER & FLOATING TOGGLE BUTTON -->
+    <div class="audio-float">
+        <button id="musicToggle" onclick="toggleAudio()" class="w-12 h-12 rounded-full bg-brown-card border border-gold/50 text-gold shadow-2xl flex items-center justify-center hover:scale-110 transition-transform">
+            <i id="musicIcon" class="fa-solid fa-music"></i>
+        </button>
+        <audio id="weddingAudio" loop preload="auto">
+            <source src="https://cdn.pixabay.com/download/audio/2022/05/27/audio_1808fbf07a.mp3?filename=indian-traditional-instrumental-11234.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <!-- Script Section -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ once: true, duration: 800 });
+
+        const weddingDateTarget = new Date("2026-12-10T09:00:00").getTime();
+        const whatsappPhoneNumber = "919087298150";
+
+        const audio = document.getElementById("weddingAudio");
+        const musicIcon = document.getElementById("musicIcon");
+        let isPlaying = false;
+
+        // Open Invitation & Play Music
+        function openInvitation() {
+            const frontCover = document.getElementById("front-cover");
+            const bodyWrapper = document.getElementById("body-wrapper");
+
+            frontCover.classList.add("hidden-cover");
+            bodyWrapper.classList.remove("overflow-hidden");
+
+            // Play Music
+            audio.play().then(() => {
+                isPlaying = true;
+                musicIcon.classList.remove("fa-music");
+                musicIcon.classList.add("fa-compact-disc", "fa-spin");
+            }).catch(e => {
+                console.log("Audio play blocked by browser:", e);
+            });
+
+            // Re-init AOS animations
+            setTimeout(() => {
+                AOS.refresh();
+            }, 300);
+        }
+
+        function updateCountdown() {
+            const now = new Date().getTime();
+            const distance = weddingDateTarget - now;
+
+            if (distance < 0) {
+                document.getElementById("cd-days").innerText = "00";
+                document.getElementById("cd-hours").innerText = "00";
+                document.getElementById("cd-mins").innerText = "00";
+                document.getElementById("cd-secs").innerText = "00";
+                return;
+            }
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById("cd-days").innerText = days < 10 ? "0" + days : days;
+            document.getElementById("cd-hours").innerText = hours < 10 ? "0" + hours : hours;
+            document.getElementById("cd-mins").innerText = minutes < 10 ? "0" + minutes : minutes;
+            document.getElementById("cd-secs").innerText = seconds < 10 ? "0" + seconds : seconds;
+        }
+
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+
+        function sendWhatsAppWish(e) {
+            e.preventDefault();
+            const name = document.getElementById("guestName").value.trim();
+            const message = document.getElementById("guestMessage").value.trim();
+
+            const text = `Hi! ✨%0A%0A*Name:* ${encodeURIComponent(name)}%0A*Wishes:* ${encodeURIComponent(message)}%0A%0AHappy Wedding! 🎉`;
+            
+            const whatsappUrl = `https://wa.me/${whatsappPhoneNumber}?text=${text}`;
+            window.open(whatsappUrl, '_blank');
+        }
+
+        function addToCalendar(title, isoStartDate, location) {
+            const startDate = isoStartDate.replace(/-|:|\.\d\d\d/g, "");
+            const endDate = startDate;
+            const details = "Wedding celebration";
+            
+            const googleCalUrl = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(title)}&dates=${startDate}/${endDate}&details=${encodeURIComponent(details)}&location=${encodeURIComponent(location)}`;
+            window.open(googleCalUrl, '_blank');
+        }
+
+        function toggleAudio() {
+            if (isPlaying) {
+                audio.pause();
+                musicIcon.classList.remove("fa-compact-disc", "fa-spin");
+                musicIcon.classList.add("fa-music");
+            } else {
+                audio.play().catch(e => console.log("Audio playback error"));
+                musicIcon.classList.remove("fa-music");
+                musicIcon.classList.add("fa-compact-disc", "fa-spin");
+            }
+            isPlaying = !isPlaying;
+        }
+    </script>
+</body>
+</html>
